@@ -1,0 +1,4 @@
+django==1.11
+bootstrap-admin==0.3.9
+django-suit==0.2.26
+markdown==2.6.9

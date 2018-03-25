@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Echo-Ray</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
+    <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title"><a href="{% url "home" %}">Echo Ray</a></h1>
+            <h2 class="brand-tagline">In Crypto We Trust</h2>
+    
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="pure-button" href="/">Blog</a></li>
+                    <li class="nav-item"><a class="pure-button" href="/archives">Test</a></li>
+                    <li class="nav-item"><a class="pure-button" href="/cypto">Cypto</a></li>
+                    
+                    <li class="nav-item"><a class="pure-button" href="/about_me/">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            {% block content %}
+            {% endblock %}
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="http://echo-ray.tk/about/" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="http://echo__ray@hotmail.com" class="pure-menu-link">Email</a></li>
+                        <li class="pure-menu-item"><a href="http://github.com/echo-ray" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+            
+</body>
+</html>
+
